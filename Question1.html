@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Question 1</title>
+    <script>
+        function checkEvenOdd() {
+            var userInput = window.prompt("Enter a Number");
+            var result = "";
+            if (userInput % 2 == 0) {
+                result = "Even";
+                console.log("The number entered is" + " " + userInput + " " + "and Number is" + " " + result);
+            } else {
+                result = "Odd";
+                console.log("The number entered is" + " " + userInput + " " + "and Number is" + " " + result);
+            }
+        }
+    </script>
+</head>
+
+<body onload="checkEvenOdd()">
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Question 3</title>
+    <script>
+        // USING IF AND ELSE
+        var enteredMarks = window.prompt("Enter Marks");
+        var obtainGrade;
+        if (enteredMarks <= 50) {
+            obtainGrade = "C";
+            console.log("Marks are" + " " + enteredMarks + " " + "and grade is" + " " + obtainGrade);
+        } else if (enteredMarks >= 50 && enteredMarks < 80) {
+            obtainGrade = "B";
+            console.log("Marks are" + " " + enteredMarks + " " + "and grade is" + " " + obtainGrade);
+        } else if (enteredMarks >= 80) {
+            obtainGrade = "A";
+            console.log("Marks are" + " " + enteredMarks + " " + "and grade is" + " " + obtainGrade);
+        }
+
+        // USING SWITCH
+        switch (true) {
+            case enteredMarks <= 50:
+                obtainGrade = "C";
+                console.log("Marks are" + " " + enteredMarks + " " + "and grade is" + " " + obtainGrade);
+                break;
+
+            case enteredMarks >= 50 && enteredMarks < 80:
+                obtainGrade = "B";
+                console.log("Marks are" + " " + enteredMarks + " " + "and grade is" + " " + obtainGrade);
+                break;
+
+            case enteredMarks >= 80:
+                obtainGrade = "A";
+                console.log("Marks are" + " " + enteredMarks + " " + "and grade is" + " " + obtainGrade);
+                break;
+        }
+
+        obtainGrade = (enteredMarks <= 50) ? "C" : (enteredMarks >= 50 && enteredMarks < 80) ? "B" : (enteredMarks >= 80) ? "A" : "Null";
+        console.log("Marks are" + " " + enteredMarks + " " + "and grade is" + " " + obtainGrade);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
